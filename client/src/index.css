@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-dark: #222222;
+  --color-primary-blue: #414BEA;
+  --color-light-blue: #D9E2FF;
+  --color-accent-orange: #F05537;
+  --color-light-gray: #F6F5F5;
+  --color-white: #FFFFFF;
+  --color-accent-purple: #7752FE;
+  --color-deep-purple: #190482;
+  --color-soft-blue: #DDF2FD;
+  --color-pale-blue: #C2D9FF;
+  --color-dark-gray: #3D3B40;
+  --color-bright-blue: #525CEB;
+  --color-muted-blue: #BFCFE7;
+  --color-lavender: #F8EDFF;
+  
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@layer base {
+  body {
+    background-color: var(--color-light-gray);
+    color: var(--color-primary-dark);
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+}
